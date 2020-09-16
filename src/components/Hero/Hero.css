@@ -1,0 +1,29 @@
+.hero {
+    color: #fff;
+    text-align: center;
+    padding: 25rem 0;
+    background: #222;
+
+}
+
+@supports(background-blend-mode: multiply) {
+    .hero {
+        background:
+            url(../../images/shoe-3.png),
+            radial-gradient(#444, #111);
+        background-blend-mode: multiply;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-position: center 30%;
+
+    }
+}
+
+
+.primary-title {
+    font-size: 6.4rem;
+    font-size: clamp(4.8rem, calc(5vw + 1.6rem), 7.2rem);
+    line-height: 1;
+    text-transform: uppercase;
+    vertical-align: center;
+}

@@ -74,7 +74,7 @@ function SEO({ description, lang, meta, title }) {
 
 SEO.defaultProps = {
   lang: `en`,
-  meta: [],
+  meta: [<meta name="viewport" content="width=device-width"></meta>],
   description: ``,
 }
 
